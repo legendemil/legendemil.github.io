@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Todo App</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width'>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	
+	<div class="container">
+		<header class="heading">
+			<h1 class='heading__title'>Add new Todo</h1>
+			<button class="heading__btn">
+				Add
+				<i class="icon-plus"></i>
+			</button>
+			<input type="text" name="newTodo-title" placeholder='Title' class="heading__input-text" maxlength="25">
+			<textarea name='newTodo' placeholder="My new Todo" class='heading__textarea'></textarea>
+			<!-- <input type="text" name="newTodo" placeholder='My new todo' class="heading__input-text"> -->
+			<div class='radio-box'>
+				<label for="priority" class='radio-box__title'>Priority:</label>
+				<label class='radio-box__radio-label'>
+					Low
+					<input type="radio" name='priority' value='1' class='radio-box__radio'>
+				</label>
+				
+				<label class='radio-box__radio-label'>
+					Normal
+					<input type="radio" name='priority' value='2' class='radio-box__radio radio-box__radio--checked' checked>
+				</label>
+				
+				<label class='radio-box__radio-label'>
+					High
+					<input type="radio" name='priority' value='3' class='radio-box__radio'>
+				</label>
+				
+			</div>
+		</header>
+
+		<main>
+			<section class='todos'>
+				<ul class="todos__list">
+					<!-- <li class="todos__list-item">
+						Make a dinner 
+						<button class="btn-checker"><i class="icon-trash-empty"></i></button>
+						<button class="btn-checker"><i class="icon-check-empty"></i></button>
+					</li> -->
+				</ul>
+			</section>
+		</main>
+	</div>
+
+	<script src='bundle.js'></script>
+</body>
+</html>
